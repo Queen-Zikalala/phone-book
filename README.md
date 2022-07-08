@@ -11,8 +11,9 @@
 #phoneBookWeb
 (1) Is a angular 14 application
 (2) Connects to phone-book-service for http requests
-(3) command to run is: ng s
-(4) User can add entry to phonebook by using Post method
-(5) User can get list of entries by using Get method
-(6) User can search by name
-(7) Uses ngx-datatable library 
+(3) install node modules command is: npm i
+(4) command to run is: ng s
+(5) User can add entry to phonebook by using Post method
+(6) User can get list of entries by using Get method
+(7) User can search by name
+(8) Uses ngx-datatable library 

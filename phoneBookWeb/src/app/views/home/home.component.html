@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="container-fluid mb-body justify-content: center" style="margin-top: 10px;">
+        <h3>
+          Phone Book List
+        </h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group form-inline">
+              <input type="text" [(ngModel)]="searchValue" (keyup)="search($event)" class="form-control col-3" aria-describedby="nameSearch" placeholder="Enter name to search">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-secondary" [routerLink]="'/add-contact'">Add Contact</button>
+          </div>
+        </div>
+      <br>
+        <ngx-datatable class="material" [rows]="phoneBookList" [columnMode]="'force'" [headerHeight]="45" [rowHeight]="45"
+          [scrollbarH]="true" [footerHeight]="50" [limit]="5" [selected]="selected" [selectionType]="single">
+          <ngx-datatable-column name="Name" prop="name" [sortable]="true" [canAutoResize]="true"></ngx-datatable-column>
+          <ngx-datatable-column name="Phone Number" prop="phoneNumber" [sortable]="true" [canAutoResize]="true"></ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+  </div>
+  
+  
+
+

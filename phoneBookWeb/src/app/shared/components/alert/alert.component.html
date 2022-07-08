@@ -1,0 +1,7 @@
+<div class="{{ cssClass(alert$ | async) }}" role="alert">
+    {{ (alert$ | async)?.message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  

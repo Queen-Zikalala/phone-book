@@ -13,6 +13,6 @@
 (2) Connects to phone-book-service for http requests
 (3) command to run is: ng s
 (4) User can add entry to phonebook by using Post method
-(5) User can get list of entries by using Get methos
+(5) User can get list of entries by using Get method
 (6) User can search by name
 (7) Uses ngx-datatable library 
